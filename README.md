@@ -4,7 +4,7 @@
         <img src="https://png.icons8.com/metro/1600/plus-math.png" height="50px">
         <img src="https://vuejs.org/images/logo.png" height="100px">
     </a>
-    <h1 align="center">Yii 2 + Vue.js Project Template</h1>
+    <h1 align="center">Yii 3 + Vue.js Project Template</h1>
     <br>
 </p>
 

@@ -1,34 +1,45 @@
 {
-    "name": "developeruz/yii-vue-app",
+    "name": "philippfrenzel/weasy",
     "description": "Yii 2 + Vue.js Basic Project Template",
     "keywords": ["yii2", "framework", "basic", "project template", "vue.js"],
     "type": "project",
-    "license": "BSD-3-Clause",
+    "license": "MIT Clause",
     "support": {
-        "issues": "https://github.com/developeruz/yii-vue-app/issues?state=open",
-        "source": "https://github.com/developeruz/yii-vue-app"
+        "issues": "https://github.com/philippfrenzel/weasy/issues?state=open",
+        "source": "https://github.com/philippfrenzel/weasy"
     },
     "minimum-stability": "dev",
     "require": {
-        "php": ">=5.4.0",
-        "yiisoft/yii2": "~2.0.14",
-        "yiisoft/yii2-bootstrap": "~2.0.0",
-        "yiisoft/yii2-swiftmailer": "~2.0.0"
+        "yiisoft/cache": "^3.0@dev",
+        "yiisoft/di": "^3.0@dev",
+        "yiisoft/log": "^3.0@dev",
+        "yiisoft/yii-console": "^3.0@dev",
+        "yiisoft/view": "^3.0@dev",
+        "yiisoft/yii-web": "^3.0@dev",
+        "symfony/var-dumper": "^4.3@dev",
+        "vlucas/phpdotenv": "^2.5@dev",
+        "yiisoft/yii-dataview": "^3.0@dev",
+        "league/commonmark": "^0.19.0@dev",
+        "ezyang/htmlpurifier": "~4.6"
     },
     "require-dev": {
-        "yiisoft/yii2-debug": "~2.0.0",
-        "yiisoft/yii2-gii": "~2.0.0",
-        "yiisoft/yii2-faker": "~2.0.0",
-
+        "hiqdev/composer-config-plugin": "^1.0@dev",
         "codeception/base": "^2.2.3",
         "codeception/verify": "~0.3.1",
         "codeception/specify": "~0.4.3"
     },
     "config": {
-        "process-timeout": 1800,
+        "foxy": {
+            "enable-packages": {
+                "*": true
+            }
+        },
         "fxp-asset": {
             "enabled": false
         }
+    },
+    "autoload": {
+        "psr-4": {"yii\\app\\": "src"}
     },
     "scripts": {
         "post-install-cmd": [
@@ -42,6 +53,16 @@
         ]
     },
     "extra": {
+        "branch-alias": {
+            "dev-master": "3.0.x-dev"
+        },
+        "config-plugin": {
+            "common": "config/common.php",
+            "params": "config/params.php",
+            "web": "config/web.php",
+            "console": "config/console.php",
+            "dotenv": ".env"
+        },
         "yii\\composer\\Installer::postCreateProject": {
             "setPermission": [
                 {

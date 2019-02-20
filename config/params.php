@@ -7,4 +7,7 @@ return [
     'db.username'   => 'root',
     'db.password'   => '',
     'favicon.ico' => '@yii/app/../public/favicon.ico',
+    'i18n.locale' => 'en-US',
+    'debug.allowedIPs' => ['127.0.0.1'],
+    'packages' => require 'packages.php',
 ];

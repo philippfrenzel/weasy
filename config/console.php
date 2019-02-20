@@ -1,5 +1,17 @@
 <?php
 
+return [
+    'app' => [
+        'controllerNamespace' => yii\app\commands::class,
+        'aliases' => [
+            '@bower' => '@vendor/bower-asset',
+            '@npm'   => '@vendor/npm-asset',
+            '@tests' => '@app/tests',
+        ],
+    ],
+];
+
+/*
 $params = require __DIR__ . '/params.php';
 
 $config = [
@@ -22,3 +34,4 @@ if (YII_ENV_DEV) {
 }
 
 return $config;
+*/

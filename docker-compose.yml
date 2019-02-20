@@ -1,9 +1,12 @@
-version: '2'
+version: '3'
 services:
   php:
-    image: yiisoftware/yii2-php:7.1-apache
+    image: yiisoftware/yii-php:7.3-apache
     volumes:
-      - ~/.composer-docker/cache:/root/.composer/cache:delegated
-      - ./:/app:delegated
+       - c:/FREP/DOCKER/weasy/weasy:/app
+      # TODO: temporary workaround for public web-root
+      - c:/FREP/DOCKER/weasy/weasy/public:/app/web
+      # host-volume for composer cache
+      - c:/FREP/DOCKER/weasy/weasy/~/.composer-docker/cache:/root/.composer/cache:delegated
     ports:
-      - '8000:80'
+      - '8010:80'

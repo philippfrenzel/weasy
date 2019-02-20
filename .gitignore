@@ -12,6 +12,11 @@ nbproject
 # windows thumbnail cache
 Thumbs.db
 
+# composer and temp path
+~/*
+node_modules/*
+runtime/*
+
 # composer vendor dir
 /vendor
 

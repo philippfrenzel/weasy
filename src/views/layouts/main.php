@@ -3,10 +3,11 @@
 /* @var $this \yii\web\View */
 /* @var $content string */
 
+use yii\helpers\Yii;
 use app\widgets\Alert;
 use yii\helpers\Html;
-use yii\bootstrap\Nav;
-use yii\bootstrap\NavBar;
+use yii\bootstrap4\Nav;
+use yii\bootstrap4\NavBar;
 use yii\widgets\Breadcrumbs;
 use app\assets\AppAsset;
 
@@ -14,9 +15,9 @@ AppAsset::register($this);
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
-<html lang="<?= Yii::$app->language ?>">
+<html lang="en<?= ""//Yii::$app->language ?>">
 <head>
-    <meta charset="<?= Yii::$app->charset ?>">
+    <meta charset="UTF-8<?= ""//(Yii::$app->charset ?>">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <?php $this->registerCsrfMetaTags() ?>
@@ -28,10 +29,10 @@ AppAsset::register($this);
 
 <div class="wrap" id="app">
     <div class="container">
-        <nav id="w0" class="navbar-inverse navbar-fixed-top navbar">
+        <nav id="w0" class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
             <div class="container">
                 <div class="navbar-header">
-                    <router-link to="/" class="navbar-brand">My Application</router-link>
+                    <router-link to="/" class="navbar-brand">BUCHI.COM</router-link>
                 </div>
 
                 <div id="w0-collapse" class="collapse navbar-collapse">
@@ -61,7 +62,7 @@ AppAsset::register($this);
 
 <footer class="footer">
     <div class="container">
-        <p class="pull-left">&copy; My Company <?= date('Y') ?></p>
+        <p class="pull-left">&copy; BUCHI.COM <?= date('Y') ?></p>
 
         <p class="pull-right">Powered by <a href="http://www.yiiframework.com/" rel="external">Yii Framework</a></p>
     </div>

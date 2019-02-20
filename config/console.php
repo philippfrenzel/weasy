@@ -2,7 +2,7 @@
 
 return [
     'app' => [
-        'controllerNamespace' => yii\app\commands::class,
+        'controllerNamespace' => app\commands::class,
         'aliases' => [
             '@bower' => '@vendor/bower-asset',
             '@npm'   => '@vendor/npm-asset',

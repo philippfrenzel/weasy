@@ -1,0 +1,122 @@
+@import (less) "../../node_modules/purecss/build/pure.css";
+@import (less) "../../node_modules/octicons/build/build.css";
+@import "_layout.less";
+@import "_tabs.less";
+
+@primary-color: #ec3b3b;
+
+@sm: ~"screen and (min-width: 576px)";
+@md: ~"screen and (min-width: 768px)";
+@lg: ~"screen and (min-width: 992px)";
+@xl: ~"screen and (min-width: 1200px)";
+
+body {
+    color: #777;
+}
+
+a {
+    color: @primary-color;
+    text-decoration: none;
+    &:hover {
+        color: darken(@primary-color, 10%);
+    }
+}
+
+blockquote {
+    border-left: 3px solid @primary-color;
+    margin: 0;
+    padding-left: 1em;
+    font-size: 12px;
+}
+
+.md {
+    code {
+        background: rgba(27,31,35,.05);
+        color: #080808;
+        border-radius: 3px;
+        font-size: 85%;
+        margin: 0;
+        padding: .2em .4em;
+    }
+
+    summary {
+        cursor: pointer;
+        &::-webkit-details-marker {
+            color: @primary-color;
+        }
+    }
+}
+
+/* Errors */
+.exception {
+    font-family: Consolas, Courier, monospace;
+    color: #333;
+    background: #ffcaca;
+    margin: 1em 0px;
+    padding: 1em;
+    border: 1px solid #eee;
+}
+
+pre.sf-dump {
+    white-space: pre!important;
+}
+
+/** Packages **/
+
+.packages {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    @media @sm {
+        grid-template-columns: repeat(3, auto);
+    }
+    @media @md {
+        grid-template-columns: repeat(4, auto);
+    }
+    @media @lg {
+        grid-template-columns: repeat(5, auto);
+    }
+    .item {
+        text-align: center;
+        padding-bottom: 1em;
+    }
+}
+
+svg.deps {
+    .link {
+        fill: none;
+        stroke: #666;
+        stroke-width: 1.5px;
+    }
+    
+    #require {
+        fill: black;
+    }
+    
+    #require-dev {
+     fill: gray;
+    }
+    
+    
+    .link.require-dev {
+        stroke: gray;
+        stroke-dasharray: 0,2 1;
+    }
+    
+    circle {
+        fill: #ccc;
+        stroke: #333;
+        stroke-width: 1.5px;
+    }
+    
+    text {
+        font: 14px sans-serif;
+        pointer-events: none;
+        text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, 0 -1px 0 #fff, -1px 0 0 #fff;
+    }
+}
+
+ul.pagination {
+    li {
+        display: inline-block;
+    }
+}

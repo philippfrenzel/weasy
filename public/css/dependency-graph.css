@@ -1,0 +1,27 @@
+.node circle {
+  cursor: pointer;
+  stroke-width: 2;
+}
+.node text {
+  font: 9px sans-serif;
+  font-weight: bold;
+  fill: black;
+  cursor: pointer;
+}
+.link {
+  stroke: #999;
+  stroke-opacity: .6;
+  stroke-width: 2;
+  marker-end: url(#end-arrow);
+}
+.background {
+  stroke: gray;
+  stroke-width: 1px;
+  fill: none;
+}
+.edgeLabel {
+  fill: #333;
+  font: 12px sans-serif;
+  pointer-events: none;
+}
+/*# sourceMappingURL=dependency-graph.css.map */

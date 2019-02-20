@@ -15,25 +15,25 @@
         "league/commonmark": "^0.19.0@dev",
         "symfony/var-dumper": "^4.3@dev",
         "vlucas/phpdotenv": "^2.5@dev",
-        "yiisoft/yii-bootstrap4": "dev-master",
         "yiisoft/cache": "^3.0@dev",
         "yiisoft/di": "^3.0@dev",
         "yiisoft/log": "^3.0@dev",
         "yiisoft/rbac": "dev-master",
+        "yiisoft/view": "^3.0@dev",
+        "yiisoft/yii-bootstrap4": "dev-master",
         "yiisoft/yii-jquery": "dev-master",
         "yiisoft/yii-console": "^3.0@dev",
-        "yiisoft/view": "^3.0@dev",
         "yiisoft/yii-web": "^3.0@dev",
         "yiisoft/yii-dataview": "^3.0@dev",
         "yiisoft/active-record": "^3.0@dev",
-        "yiisoft/yii-swiftmailer": "dev-master"
+        "yiisoft/yii-swiftmailer": "dev-master",
+        "foxy/foxy": "^1.0"
     },
     "require-dev": {
         "hiqdev/composer-config-plugin": "^1.0@dev",
         "codeception/base": "^2.2.3",
         "codeception/verify": "~0.3.1",
         "codeception/specify": "~0.4.3",
-        "foxy/foxy": "^1.0",
         "yiisoft/yii-debug": "dev-master",
         "yiisoft/yii-gii": "dev-master",
         "phpunit/phpunit": "^7.3"
@@ -49,10 +49,10 @@
         }
     },
     "autoload": {
-        "psr-4": {"weasy\\app\\": "src"}
+        "psr-4": {"app\\": "src"}
     },
     "autoload-dev": {
-        "psr-4": {"weasy\\app\\tests\\": "tests"}
+        "psr-4": {"app\\tests\\": "tests"}
     },
     "scripts": {
         "post-install-cmd": [

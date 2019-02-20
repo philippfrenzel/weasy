@@ -10,7 +10,7 @@ services:
     volumes:
       - c:/FREP/DOCKER/weasy:/app
       # TODO: temporary workaround for public web-root
-      - c:/FREP/DOCKER/weasy/web:/app/web
+      - c:/FREP/DOCKER/weasy/public:/app/web
       # host-volume for composer cache
       - c:/FREP/DOCKER/weasy/~/.composer-docker/cache:/root/.composer/cache:delegated
       # fix node issue as of https://github.com/sass/node-sass/issues/2520

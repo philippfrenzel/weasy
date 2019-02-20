@@ -1,7 +1,7 @@
 <?php
 return [
     'app' => [
-        'controllerNamespace' => yii\app\controllers::class,
+        'controllerNamespace' => app\controllers::class,
         'aliases' => [
             '@webroot' => __DIR__ . '/../public',
             //'@doc' => __DIR__ . '/../docs',

@@ -3819,49 +3819,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
@@ -3890,85 +3847,11 @@ var staticRenderFns = [
         _vm._v(" "),
         _c("p", { staticClass: "lead" }, [
           _vm._v("You have successfully created your Yii-powered application.")
-        ]),
-        _vm._v(" "),
-        _c("p", [
-          _c(
-            "a",
-            {
-              staticClass: "btn btn-lg btn-success",
-              attrs: { href: "http://www.yiiframework.com" }
-            },
-            [_vm._v("Get started with Yii")]
-          )
         ])
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "body-content" }, [
-        _c("div", { staticClass: "row" }, [
-          _c("div", { staticClass: "col-lg-4" }, [
-            _c("h2", [_vm._v("Heading")]),
-            _vm._v(" "),
-            _c("p", [
-              _vm._v(
-                "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut\n                    labore et\n                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut\n                    aliquip\n                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum\n                    dolore eu\n                    fugiat nulla pariatur."
-              )
-            ]),
-            _vm._v(" "),
-            _c("p", [
-              _c(
-                "a",
-                {
-                  staticClass: "btn btn-default",
-                  attrs: { href: "http://www.yiiframework.com/doc/" }
-                },
-                [_vm._v("Yii Documentation »")]
-              )
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-lg-4" }, [
-            _c("h2", [_vm._v("Heading")]),
-            _vm._v(" "),
-            _c("p", [
-              _vm._v(
-                "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut\n                    labore et\n                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut\n                    aliquip\n                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum\n                    dolore eu\n                    fugiat nulla pariatur."
-              )
-            ]),
-            _vm._v(" "),
-            _c("p", [
-              _c(
-                "a",
-                {
-                  staticClass: "btn btn-default",
-                  attrs: { href: "http://www.yiiframework.com/forum/" }
-                },
-                [_vm._v("Yii Forum »")]
-              )
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-lg-4" }, [
-            _c("h2", [_vm._v("Heading")]),
-            _vm._v(" "),
-            _c("p", [
-              _vm._v(
-                "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut\n                    labore et\n                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut\n                    aliquip\n                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum\n                    dolore eu\n                    fugiat nulla pariatur."
-              )
-            ]),
-            _vm._v(" "),
-            _c("p", [
-              _c(
-                "a",
-                {
-                  staticClass: "btn btn-default",
-                  attrs: { href: "http://www.yiiframework.com/extensions/" }
-                },
-                [_vm._v("Yii\n                    Extensions »")]
-              )
-            ])
-          ])
-        ])
+        _vm._v("\n\n    BUCHI CONTENT GOES HERE...\n\n    ")
       ])
     ])
   }

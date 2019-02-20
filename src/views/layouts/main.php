@@ -29,7 +29,7 @@ AppAsset::register($this);
 
 <div class="wrap" id="app">
     <div class="container">
-        <nav id="w0" class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <nav id="w0" class="navbar navbar-expand-md navbar-dark bg-dark">
             <div class="container">
                 <div class="navbar-header">
                     <router-link to="/" class="navbar-brand">BUCHI.COM</router-link>
@@ -60,7 +60,7 @@ AppAsset::register($this);
     </div>
 </div>
 
-<footer class="footer">
+<footer class="footer mt-auto py-3">
     <div class="container">
         <p class="pull-left">&copy; BUCHI.COM <?= date('Y') ?></p>
 

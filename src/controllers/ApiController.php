@@ -2,10 +2,11 @@
 
 namespace app\controllers;
 
-use Yii;
+use yii\helpers\Yii;
+use yii\base\Action;
 use yii\web\Controller;
 use yii\web\Response;
-use yii\filters\VerbFilter;
+use yii\exceptions\InvalidConfigException;
 use app\models\LoginForm;
 
 class ApiController extends Controller
@@ -13,13 +14,25 @@ class ApiController extends Controller
     /**
      * {@inheritdoc}
      */
+    public function actions()
+    {
+        return [
+            'error' => [
+                '__class' => \yii\web\ErrorAction::class,
+            ],
+        ];
+    }
+
+    /**
+     * {@inheritdoc}
+     */
     public function behaviors()
     {
         return [
             'verbs' => [
-                'class' => VerbFilter::class,
+                '__class' => \yii\web\filters\VerbFilter::class,
                 'actions' => [
-                    'login' => ['post'],
+                    'login' => ['POST'],
                 ],
             ],
         ];
@@ -28,22 +41,12 @@ class ApiController extends Controller
     /**
      * {@inheritdoc}
      */
-    public function beforeAction($action)
-    {
-        \Yii::$app->response->format = \yii\web\Response::FORMAT_JSON;
-        return parent::beforeAction($action);
-    }
-
-    /**
-     * {@inheritdoc}
-     */
     public function afterAction($action, $result)
     {
         $result = parent::afterAction($action, $result);
-        $result['token'] = \Yii::$app->request->csrfToken;
-        return $result;
+        $result['token'] = $this->app->request->csrfToken;
+        return $this->asJson($result);
     }
-
 
     /**
      * Login action.
@@ -53,9 +56,9 @@ class ApiController extends Controller
     public function actionLogin()
     {
         $model = new LoginForm();
-        $model->load(Yii::$app->request->post(), '');
+        $model->load($this->app->request->post(), '');
         if ($model->login()) {
-            return ['result' => 'success', 'user_id' => Yii::$app->user->getId()];
+            return ['result' => 'success', 'user_id' => $this->app->user->getId()];
         } else {
             return ['result' => 'error', 'messages' => $model->getFirstErrors()];
         }

@@ -5,8 +5,7 @@ return [
         'aliases' => [
             '@app' => dirname(__DIR__),
             '@vendor' => dirname(__DIR__) . '/vendor',
-        ],
-        'controllerNamespace' => \yii\app\commands::class,
+        ]
         /*
         'controllerMap' => [
             'fixture' => [ // Fixture generation command line.

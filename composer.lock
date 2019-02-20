@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "beb1c168ff12dedb830e890d97e410df",
+    "content-hash": "7c82c0837249a84a46058bd1bc4efb74",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -3469,12 +3469,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-timer.git",
-                "reference": "8b389aebe1b8b0578430bda0c7c95a829608e059"
+                "reference": "47c4509cdcffe5ffb7ad8c3a40ab11a85398b746"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-timer/zipball/8b389aebe1b8b0578430bda0c7c95a829608e059",
-                "reference": "8b389aebe1b8b0578430bda0c7c95a829608e059",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-timer/zipball/47c4509cdcffe5ffb7ad8c3a40ab11a85398b746",
+                "reference": "47c4509cdcffe5ffb7ad8c3a40ab11a85398b746",
                 "shasum": ""
             },
             "require": {
@@ -3510,7 +3510,7 @@
             "keywords": [
                 "timer"
             ],
-            "time": "2019-02-20T10:12:59+00:00"
+            "time": "2019-02-20T14:07:14+00:00"
         },
         {
             "name": "phpunit/php-token-stream",

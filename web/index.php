@@ -1,12 +1,19 @@
 <?php
 
-// comment out the following two lines when deployed to production
-defined('YII_DEBUG') or define('YII_DEBUG', true);
-defined('YII_ENV') or define('YII_ENV', 'dev');
+use hiqdev\composer\config\Builder;
+use yii\di\Container;
+use yii\helpers\Yii;
 
-require __DIR__ . '/../vendor/autoload.php';
-require __DIR__ . '/../vendor/yiisoft/yii2/Yii.php';
+(function () {
+    require_once __DIR__ . '/../vendor/autoload.php';
 
-$config = require __DIR__ . '/../config/web.php';
+    // This should NOT be done in production !
+    // @see https://github.com/hiqdev/composer-config-plugin#refreshing-config
+    \hiqdev\composer\config\Builder::rebuild();
 
-(new yii\web\Application($config))->run();
+    $container = new Container(require Builder::path('web'));
+
+    Yii::setContainer($container);
+
+    $container->get('app')->run();
+})();

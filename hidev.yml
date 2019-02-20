@@ -1,0 +1,5 @@
+package:
+    type:       project
+    name:       yii-project-template
+    title:      Yii Framework Project Template
+    keywords:   yii, app, project, template

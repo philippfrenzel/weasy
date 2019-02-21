@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9daf1eeda5fdb52b257fbedca744d53a",
+    "content-hash": "9bf6fec9a444288f6d22ae2dc3ff42e3",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -1434,6 +1434,110 @@
             "time": "2019-01-25T07:43:30+00:00"
         },
         {
+            "name": "yiisoft/db-mysql",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yiisoft/db-mysql.git",
+                "reference": "7acf2fe43a2299d39b66493b4d83be2852d0eff5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yiisoft/db-mysql/zipball/7acf2fe43a2299d39b66493b4d83be2852d0eff5",
+                "reference": "7acf2fe43a2299d39b66493b4d83be2852d0eff5",
+                "shasum": ""
+            },
+            "require": {
+                "yiisoft/db": "^3.0@dev"
+            },
+            "require-dev": {
+                "hiqdev/composer-config-plugin": "^1.0@dev",
+                "phpunit/phpunit": "^7.3",
+                "yiisoft/active-record": "^3.0@dev",
+                "yiisoft/cache": "^3.0@dev",
+                "yiisoft/di": "^3.0@dev",
+                "yiisoft/log": "^3.0@dev",
+                "yiisoft/view": "^3.0@dev",
+                "yiisoft/yii-console": "^3.0@dev",
+                "yiisoft/yii-core": "^3.0@dev",
+                "yiisoft/yii-web": "^3.0@dev"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.0.x-dev"
+                },
+                "config-plugin": {
+                    "params": "config/params.php",
+                    "common": "config/common.php",
+                    "tests": "config/tests.php"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "yii\\db\\mysql\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Qiang Xue",
+                    "email": "qiang.xue@gmail.com",
+                    "homepage": "http://www.yiiframework.com/",
+                    "role": "Founder and project lead"
+                },
+                {
+                    "name": "Alexander Makarov",
+                    "email": "sam@rmcreative.ru",
+                    "homepage": "http://rmcreative.ru/",
+                    "role": "Core framework development"
+                },
+                {
+                    "name": "Maurizio Domba",
+                    "homepage": "http://mdomba.info/",
+                    "role": "Core framework development"
+                },
+                {
+                    "name": "Carsten Brandt",
+                    "email": "mail@cebe.cc",
+                    "homepage": "http://cebe.cc/",
+                    "role": "Core framework development"
+                },
+                {
+                    "name": "Timur Ruziev",
+                    "email": "resurtm@gmail.com",
+                    "homepage": "http://resurtm.com/",
+                    "role": "Core framework development"
+                },
+                {
+                    "name": "Paul Klimov",
+                    "email": "klimov.paul@gmail.com",
+                    "role": "Core framework development"
+                },
+                {
+                    "name": "Dmitry Naumenko",
+                    "email": "d.naumenko.a@gmail.com",
+                    "role": "Core framework development"
+                },
+                {
+                    "name": "Boudewijn Vahrmeijer",
+                    "email": "info@dynasource.eu",
+                    "homepage": "http://dynasource.eu",
+                    "role": "Core framework development"
+                }
+            ],
+            "description": "Yii DataBase MySQL Extension",
+            "homepage": "http://www.yiiframework.com/",
+            "keywords": [
+                "mysql",
+                "yii"
+            ],
+            "time": "2019-01-22T13:08:42+00:00"
+        },
+        {
             "name": "yiisoft/di",
             "version": "dev-master",
             "source": {
@@ -1803,63 +1907,6 @@
             "time": "2019-01-07T11:35:19+00:00"
         },
         {
-            "name": "yiisoft/yii-base-cli",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/yiisoft/yii-base-cli.git",
-                "reference": "cb74b1209cfe08ce9ea08e0c091e00011c700cc7"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii-base-cli/zipball/cb74b1209cfe08ce9ea08e0c091e00011c700cc7",
-                "reference": "cb74b1209cfe08ce9ea08e0c091e00011c700cc7",
-                "shasum": ""
-            },
-            "require": {
-                "hiqdev/composer-config-plugin": "^1.0@dev",
-                "php": ">=7.1.0",
-                "yiisoft/cache": "^3.0@dev",
-                "yiisoft/di": "^3.0@dev",
-                "yiisoft/log": "^3.0@dev",
-                "yiisoft/view": "^3.0@dev",
-                "yiisoft/yii-console": "^3.0@dev"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^7.3"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.0.x-dev"
-                },
-                "config-plugin": {
-                    "params": "config/params.php",
-                    "common": "config/common.php",
-                    "console": "config/console.php"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "yii\\cli\\app\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "description": "Yii Framework Command Line Application Base",
-            "homepage": "https://github.com/yiisoft/yii-base-web",
-            "keywords": [
-                "application",
-                "cli",
-                "console",
-                "framework",
-                "yii"
-            ],
-            "time": "2019-01-25T12:55:06+00:00"
-        },
-        {
             "name": "yiisoft/yii-bootstrap4",
             "version": "dev-master",
             "source": {
@@ -2059,12 +2106,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii-core.git",
-                "reference": "c7eb5acbf8ab92e1e5d2bad932563b13eda76b5a"
+                "reference": "20600ff2fabc65dce983d01efc9dc6bcf711ef5c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii-core/zipball/c7eb5acbf8ab92e1e5d2bad932563b13eda76b5a",
-                "reference": "c7eb5acbf8ab92e1e5d2bad932563b13eda76b5a",
+                "url": "https://api.github.com/repos/yiisoft/yii-core/zipball/20600ff2fabc65dce983d01efc9dc6bcf711ef5c",
+                "reference": "20600ff2fabc65dce983d01efc9dc6bcf711ef5c",
                 "shasum": ""
             },
             "require": {
@@ -2184,7 +2231,7 @@
                 "framework",
                 "yii"
             ],
-            "time": "2019-02-16T09:18:59+00:00"
+            "time": "2019-02-21T20:23:38+00:00"
         },
         {
             "name": "yiisoft/yii-dataview",
@@ -5144,7 +5191,7 @@
         "yiisoft/rbac": 20,
         "yiisoft/yii-rest": 20,
         "yiisoft/view": 20,
-        "yiisoft/yii-base-cli": 20,
+        "yiisoft/db-mysql": 20,
         "yiisoft/yii-bootstrap4": 20,
         "yiisoft/yii-jquery": 20,
         "yiisoft/yii-console": 20,

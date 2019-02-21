@@ -5,7 +5,7 @@ return [
     'adminEmail' => 'admin@frenzel.net',
     'db.dsn'        => "mysql:host=localhost;dbname=myproject;charset=utf8",
     'db.username'   => 'root',
-    'db.password'   => '',
+    'db.password'   => 'secret',
     'favicon.ico' => '@yii/app/../web/favicon.ico',
     'i18n.locale' => 'en-US',
     'debug.allowedIPs' => ['127.0.0.1'],

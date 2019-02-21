@@ -21,7 +21,7 @@
         "yiisoft/rbac": "dev-master",
         "yiisoft/yii-rest": "^3.0@dev",
         "yiisoft/view": "^3.0@dev",
-        "yiisoft/yii-base-cli":"@dev",
+        "yiisoft/db-mysql":"^3.0@dev",
         "yiisoft/yii-bootstrap4": "dev-master",
         "yiisoft/yii-jquery": "dev-master",
         "yiisoft/yii-console": "^3.0@dev",

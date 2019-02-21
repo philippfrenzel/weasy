@@ -1,6 +1,6 @@
 {
     "name": "philippfrenzel/weasy",
-    "description": "Yii 2 + Vue.js Basic Project Template",
+    "description": "Yii 3 + Vue.js Basic Project Template",
     "keywords": ["yii2", "framework", "basic", "project template", "vue.js"],
     "type": "project",
     "license": "MIT Clause",
@@ -19,7 +19,9 @@
         "yiisoft/di": "^3.0@dev",
         "yiisoft/log": "^3.0@dev",
         "yiisoft/rbac": "dev-master",
+        "yiisoft/yii-rest": "^3.0@dev",
         "yiisoft/view": "^3.0@dev",
+        "yiisoft/yii-base-cli":"@dev",
         "yiisoft/yii-bootstrap4": "dev-master",
         "yiisoft/yii-jquery": "dev-master",
         "yiisoft/yii-console": "^3.0@dev",
@@ -49,10 +51,10 @@
         }
     },
     "autoload": {
-        "psr-4": {"app\\": "src"}
+        "psr-4": {"yii\\app\\": "src"}
     },
     "autoload-dev": {
-        "psr-4": {"app\\tests\\": "tests"}
+        "psr-4": {"yii\\app\\tests\\": "tests"}
     },
     "scripts": {
         "post-install-cmd": [

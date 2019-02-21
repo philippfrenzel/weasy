@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7c82c0837249a84a46058bd1bc4efb74",
+    "content-hash": "9daf1eeda5fdb52b257fbedca744d53a",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -991,12 +991,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/var-dumper.git",
-                "reference": "decac633dff3494a067ed7c27349916f72acaf92"
+                "reference": "1c4cb1b574ffe75c33c6c2f2cc71840155dd36f8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/decac633dff3494a067ed7c27349916f72acaf92",
-                "reference": "decac633dff3494a067ed7c27349916f72acaf92",
+                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/1c4cb1b574ffe75c33c6c2f2cc71840155dd36f8",
+                "reference": "1c4cb1b574ffe75c33c6c2f2cc71840155dd36f8",
                 "shasum": ""
             },
             "require": {
@@ -1059,7 +1059,7 @@
                 "debug",
                 "dump"
             ],
-            "time": "2019-02-19T18:29:52+00:00"
+            "time": "2019-02-19T21:52:41+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -1803,6 +1803,63 @@
             "time": "2019-01-07T11:35:19+00:00"
         },
         {
+            "name": "yiisoft/yii-base-cli",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yiisoft/yii-base-cli.git",
+                "reference": "cb74b1209cfe08ce9ea08e0c091e00011c700cc7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yiisoft/yii-base-cli/zipball/cb74b1209cfe08ce9ea08e0c091e00011c700cc7",
+                "reference": "cb74b1209cfe08ce9ea08e0c091e00011c700cc7",
+                "shasum": ""
+            },
+            "require": {
+                "hiqdev/composer-config-plugin": "^1.0@dev",
+                "php": ">=7.1.0",
+                "yiisoft/cache": "^3.0@dev",
+                "yiisoft/di": "^3.0@dev",
+                "yiisoft/log": "^3.0@dev",
+                "yiisoft/view": "^3.0@dev",
+                "yiisoft/yii-console": "^3.0@dev"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^7.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.0.x-dev"
+                },
+                "config-plugin": {
+                    "params": "config/params.php",
+                    "common": "config/common.php",
+                    "console": "config/console.php"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "yii\\cli\\app\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "Yii Framework Command Line Application Base",
+            "homepage": "https://github.com/yiisoft/yii-base-web",
+            "keywords": [
+                "application",
+                "cli",
+                "console",
+                "framework",
+                "yii"
+            ],
+            "time": "2019-01-25T12:55:06+00:00"
+        },
+        {
             "name": "yiisoft/yii-bootstrap4",
             "version": "dev-master",
             "source": {
@@ -2303,6 +2360,73 @@
             "time": "2019-01-01T19:13:50+00:00"
         },
         {
+            "name": "yiisoft/yii-rest",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yiisoft/yii-rest.git",
+                "reference": "822bdf9a504643168731a5c8b7bdcf8a2ca06d57"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yiisoft/yii-rest/zipball/822bdf9a504643168731a5c8b7bdcf8a2ca06d57",
+                "reference": "822bdf9a504643168731a5c8b7bdcf8a2ca06d57",
+                "shasum": ""
+            },
+            "require": {
+                "yiisoft/yii-core": "^3.0@dev"
+            },
+            "require-dev": {
+                "hiqdev/composer-config-plugin": "^1.0@dev",
+                "phpunit/phpunit": "^7.3",
+                "yiisoft/cache": "^3.0@dev",
+                "yiisoft/di": "^3.0@dev",
+                "yiisoft/log": "^3.0@dev",
+                "yiisoft/view": "^3.0@dev",
+                "yiisoft/yii-web": "^3.0@dev"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.0.x-dev"
+                },
+                "config-plugin": {
+                    "params": "config/params.php",
+                    "web": "config/web.php",
+                    "tests": "$web"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "yii\\rest\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Alexander Makarov",
+                    "email": "sam@rmcreative.ru",
+                    "homepage": "http://rmcreative.ru/"
+                },
+                {
+                    "name": "Qiang Xue",
+                    "email": "qiang.xue@gmail.com",
+                    "homepage": "http://www.yiiframework.com/"
+                }
+            ],
+            "description": "Yii framework REST extension",
+            "keywords": [
+                "api",
+                "framework",
+                "rest",
+                "yii"
+            ],
+            "time": "2019-01-13T00:08:10+00:00"
+        },
+        {
             "name": "yiisoft/yii-swiftmailer",
             "version": "dev-master",
             "source": {
@@ -2547,12 +2671,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Codeception/base.git",
-                "reference": "ceff0b4fee4846b6bd8b5a37abbbb1acd6e78f58"
+                "reference": "41f2257227130faa1a43c476c72f8031f9504d7b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Codeception/base/zipball/ceff0b4fee4846b6bd8b5a37abbbb1acd6e78f58",
-                "reference": "ceff0b4fee4846b6bd8b5a37abbbb1acd6e78f58",
+                "url": "https://api.github.com/repos/Codeception/base/zipball/41f2257227130faa1a43c476c72f8031f9504d7b",
+                "reference": "41f2257227130faa1a43c476c72f8031f9504d7b",
                 "shasum": ""
             },
             "require": {
@@ -2629,7 +2753,7 @@
                 "functional testing",
                 "unit testing"
             ],
-            "time": "2019-02-02T16:29:38+00:00"
+            "time": "2019-02-20T21:29:36+00:00"
         },
         {
             "name": "codeception/phpunit-wrapper",
@@ -3469,12 +3593,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-timer.git",
-                "reference": "47c4509cdcffe5ffb7ad8c3a40ab11a85398b746"
+                "reference": "eb9e39fb4c2034c31897cdb5f59498fc9126ddcc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-timer/zipball/47c4509cdcffe5ffb7ad8c3a40ab11a85398b746",
-                "reference": "47c4509cdcffe5ffb7ad8c3a40ab11a85398b746",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-timer/zipball/eb9e39fb4c2034c31897cdb5f59498fc9126ddcc",
+                "reference": "eb9e39fb4c2034c31897cdb5f59498fc9126ddcc",
                 "shasum": ""
             },
             "require": {
@@ -3510,7 +3634,7 @@
             "keywords": [
                 "timer"
             ],
-            "time": "2019-02-20T14:07:14+00:00"
+            "time": "2019-02-20T14:16:29+00:00"
         },
         {
             "name": "phpunit/php-token-stream",
@@ -5018,7 +5142,9 @@
         "yiisoft/di": 20,
         "yiisoft/log": 20,
         "yiisoft/rbac": 20,
+        "yiisoft/yii-rest": 20,
         "yiisoft/view": 20,
+        "yiisoft/yii-base-cli": 20,
         "yiisoft/yii-bootstrap4": 20,
         "yiisoft/yii-jquery": 20,
         "yiisoft/yii-console": 20,

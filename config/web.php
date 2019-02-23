@@ -13,7 +13,7 @@ return [
         'enableAutoLogin' => true
     ],
     'request' => [
-        'enableCookieValidation' => false,
+        'enableCookieValidation' => true,
         // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
         'cookieValidationKey' => '',
         'parsers' => [

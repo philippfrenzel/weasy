@@ -10,12 +10,12 @@ return [
     'user' => [
         // '__class' => app\models\User::class,
         'identityClass' => yii\app\models\User::class, // User must implement the IdentityInterface
-        'enableAutoLogin' => true
+        'enableAutoLogin' => false
     ],
     'request' => [
         'enableCookieValidation' => true,
         // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
-        'cookieValidationKey' => '',
+        'cookieValidationKey' => 'TheFishThatSwamToSansibar',
         'parsers' => [
             'application/json' => 'yii\web\JsonParser',
         ]

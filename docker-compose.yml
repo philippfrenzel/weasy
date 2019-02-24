@@ -7,6 +7,8 @@ services:
   php:
     image: yiisoftware/yii-php:7.3-apache
     working_dir: /app
+    depends_on:
+      - db
     volumes:
       - c:/FREP/DOCKER/weasy:/app
       # TODO: temporary workaround for public web-root

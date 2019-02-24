@@ -7,18 +7,31 @@ return [
             //'@doc' => __DIR__ . '/../docs',
         ],
     ],
+    'session' => [
+        '__class' => yii\web\Session::class,
+    ],
     'user' => [
         // '__class' => app\models\User::class,
         'identityClass' => yii\app\models\User::class, // User must implement the IdentityInterface
         'enableAutoLogin' => false
     ],
-    'request' => [
-        'enableCookieValidation' => true,
-        // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
-        'cookieValidationKey' => 'TheFishThatSwamToSansibar',
-        'parsers' => [
-            'application/json' => 'yii\web\JsonParser',
-        ]
+    'response' => [
+        '__class' => yii\web\Response::class,
+        'formatters' => [
+            yii\web\Response::FORMAT_HTML => [
+                '__class' => yii\web\formatters\HtmlResponseFormatter::class,
+            ],
+            yii\web\Response::FORMAT_XML => [
+                '__class' => yii\web\formatters\XmlResponseFormatter::class,
+            ],
+            yii\web\Response::FORMAT_JSON => [
+                '__class' => yii\web\formatters\JsonResponseFormatter::class,
+            ],
+            yii\web\Response::FORMAT_JSONP => [
+                '__class' => yii\web\formatters\JsonResponseFormatter::class,
+                'useJsonp' => true,
+            ],
+        ],
     ],
     'assetManager' => [
         'appendTimestamp' => true,

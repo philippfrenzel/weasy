@@ -8,6 +8,16 @@ return [
             '@npm'   => '@vendor/npm-asset',
             '@tests' => '@app/tests',
         ],
+        'controllerMap' => [
+            'migrate' => [
+                '__class' => 'yii\console\controllers\MigrateController',
+                'migrationNamespaces' => [
+                    'app\migrations',
+                    //'some\extension\migrations',
+                ],
+                //'migrationPath' => null, // allows to disable not namespaced migration completely
+            ],
+        ],
     ],
 ];
 

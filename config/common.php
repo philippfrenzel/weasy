@@ -39,7 +39,6 @@ return [
         'dsn' => $params['db.dsn'],
         'username' => $params['db.username'],
         'password' => $params['db.password'],
-        'port' => '3306',
         'enableSchemaCache' => defined('YII_ENV') && YII_ENV !== 'dev',
     ]),
     'translator' => [

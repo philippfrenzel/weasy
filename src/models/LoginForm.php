@@ -1,8 +1,8 @@
 <?php
 
-namespace app\models;
+namespace yii\app\models;
 
-use Yii;
+use yii\helpers\Yii;
 use yii\base\Model;
 
 /**

@@ -2,11 +2,21 @@
 
 return [
     'app' => [
-        'controllerNamespace' => app\commands::class,
+        'controllerNamespace' => yii\app\commands::class,
         'aliases' => [
             '@bower' => '@vendor/bower-asset',
             '@npm'   => '@vendor/npm-asset',
             '@tests' => '@app/tests',
+        ],
+        'controllerMap' => [
+            'migrate' => [
+                '__class' => 'yii\console\controllers\MigrateController',
+                'migrationNamespaces' => [
+                    'app\migrations',
+                    //'some\extension\migrations',
+                ],
+                //'migrationPath' => null, // allows to disable not namespaced migration completely
+            ],
         ],
     ],
 ];

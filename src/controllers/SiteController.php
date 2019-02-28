@@ -1,8 +1,8 @@
 <?php
 
-namespace app\controllers;
+namespace yii\app\controllers;
 
-use Yii;
+use yii\helpers\Yii;
 use yii\web\Controller;
 
 class SiteController extends Controller

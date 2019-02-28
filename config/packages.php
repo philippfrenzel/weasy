@@ -85,10 +85,6 @@ return [
         'id' => 'yii-base-web',
         'travis' => 'org',        
     ],
-    'yii-bootstrap3' => [
-        'id' => 'yii-bootstrap3',
-        'travis' => 'org',        
-    ],
     'yii-bootstrap4' => [
         'id' => 'yii-bootstrap4',
         'travis' => 'org',        
@@ -99,7 +95,7 @@ return [
     ],
     'yii-console' => [
         'id' => 'yii-console',
-        'travis' => 'com',        
+        'travis' => 'org',        
     ],
     'yii-core' => [
         'id' => 'yii-core',

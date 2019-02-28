@@ -1,7 +1,7 @@
 <?php
-namespace app\commands;
+namespace yii\app\commands;
 
-use Yii;
+use yii\helpers\Yii;
 use yii\console\Controller;
 use yii\console\ExitCode;
 

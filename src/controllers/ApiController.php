@@ -1,6 +1,6 @@
 <?php
 
-namespace app\controllers;
+namespace yii\app\controllers;
 
 use yii\helpers\Yii;
 use yii\base\Action;
@@ -44,7 +44,7 @@ class ApiController extends Controller
     public function afterAction($action, $result)
     {
         $result = parent::afterAction($action, $result);
-        $result['token'] = $this->app->request->csrfToken;
+        $result['token'] = Yii::getApp()->request->csrfToken;
         return $this->asJson($result);
     }
 
@@ -56,9 +56,9 @@ class ApiController extends Controller
     public function actionLogin()
     {
         $model = new LoginForm();
-        $model->load($this->app->request->post(), '');
+        $model->load(Yii::getApp()->request->post(), '');
         if ($model->login()) {
-            return ['result' => 'success', 'user_id' => $this->app->user->getId()];
+            return ['result' => 'success', 'user_id' => Yii::getApp()->user->getId()];
         } else {
             return ['result' => 'error', 'messages' => $model->getFirstErrors()];
         }

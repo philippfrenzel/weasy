@@ -1,6 +1,6 @@
 {
     "name": "philippfrenzel/weasy",
-    "description": "Yii 2 + Vue.js Basic Project Template",
+    "description": "Yii 3 + Vue.js Basic Project Template",
     "keywords": ["yii2", "framework", "basic", "project template", "vue.js"],
     "type": "project",
     "license": "MIT Clause",
@@ -15,17 +15,21 @@
         "league/commonmark": "^0.19.0@dev",
         "symfony/var-dumper": "^4.3@dev",
         "vlucas/phpdotenv": "^2.5@dev",
+        "yiisoft/active-record": "^3.0@dev",
         "yiisoft/cache": "^3.0@dev",
         "yiisoft/di": "^3.0@dev",
         "yiisoft/log": "^3.0@dev",
         "yiisoft/rbac": "dev-master",
+        "yiisoft/yii-rest": "^3.0@dev",
         "yiisoft/view": "^3.0@dev",
+        "yiisoft/db-mysql":"^3.0@dev",
+        "yiisoft/yii-base-web": "^3.0@dev",
+        "yiisoft/yii-base-cli": "^3.0@dev",
         "yiisoft/yii-bootstrap4": "dev-master",
         "yiisoft/yii-jquery": "dev-master",
         "yiisoft/yii-console": "^3.0@dev",
         "yiisoft/yii-web": "^3.0@dev",
         "yiisoft/yii-dataview": "^3.0@dev",
-        "yiisoft/active-record": "^3.0@dev",
         "yiisoft/yii-swiftmailer": "dev-master",
         "foxy/foxy": "^1.0"
     },
@@ -49,10 +53,10 @@
         }
     },
     "autoload": {
-        "psr-4": {"app\\": "src"}
+        "psr-4": {"yii\\app\\": "src"}
     },
     "autoload-dev": {
-        "psr-4": {"app\\tests\\": "tests"}
+        "psr-4": {"yii\\app\\tests\\": "tests"}
     },
     "scripts": {
         "post-install-cmd": [
@@ -72,8 +76,8 @@
         "config-plugin": {
             "common": "config/common.php",
             "params": "config/params.php",
-            "console": "config/console.php",
             "web": "config/web.php",
+            "console": "config/console.php",
             "dotenv": ".env"
         }
     },

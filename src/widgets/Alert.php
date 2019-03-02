@@ -1,5 +1,5 @@
 <?php
-namespace yii\app\widgets;
+namespace app\widgets;
 
 use yii\helpers\Yii;
 

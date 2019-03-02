@@ -1,5 +1,5 @@
 <?php
-namespace yii\app\commands;
+namespace app\commands;
 
 use yii\helpers\Yii;
 use yii\console\Controller;

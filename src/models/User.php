@@ -1,5 +1,5 @@
 <?php
-namespace yii\app\models;
+namespace app\models;
 
 use yii\activerecord\ActiveRecord;
 use yii\exceptions\NotSupportedException;
@@ -12,13 +12,11 @@ use yii\web\IdentityInterface;
  *
  * @property integer $id
  * @property string $username
- * @property string $password_hash
+ * @property string $password
  * @property string $password_reset_token
- * @property string $email
+ * @property string $u_email
  * @property string $auth_key
- * @property integer $status
- * @property integer $created_at
- * @property integer $updated_at
+ * @property integer $u_level
  * @property string $password write-only password
  */
 
@@ -40,7 +38,7 @@ class User extends ActiveRecord implements IdentityInterface
     public function behaviors()
     {
         return [
-            TimestampBehavior::class,
+            //TimestampBehavior::class,
         ];
     }
     
@@ -50,8 +48,8 @@ class User extends ActiveRecord implements IdentityInterface
     public function rules()
     {
         return [
-            ['status', 'default', 'value' => self::STATUS_ACTIVE],
-            ['status', 'in', 'range' => [self::STATUS_ACTIVE, self::STATUS_DELETED]],
+            ['u_level', 'default', 'value' => self::STATUS_ACTIVE],
+            ['u_level', 'in', 'range' => [self::STATUS_ACTIVE, self::STATUS_DELETED]],
         ];
     }
     
@@ -60,7 +58,7 @@ class User extends ActiveRecord implements IdentityInterface
      */
     public static function findIdentity($id)
     {
-        return static::findOne(['id' => $id, 'status' => self::STATUS_ACTIVE]);
+        return static::findOne(['u_id' => $id, 'u_level' => self::STATUS_ACTIVE]);
     }
     
     /**
@@ -79,7 +77,7 @@ class User extends ActiveRecord implements IdentityInterface
      */
     public static function findByUsername($username)
     {
-        return static::findOne(['username' => $username, 'status' => self::STATUS_ACTIVE]);
+        return static::findOne(['u_name' => $username, 'u_level' => self::STATUS_ACTIVE]);
     }
     
     /**
@@ -96,7 +94,7 @@ class User extends ActiveRecord implements IdentityInterface
         
         return static::findOne([
             'password_reset_token' => $token,
-            'status' => self::STATUS_ACTIVE,
+            'u_level' => self::STATUS_ACTIVE,
         ]);
     }
     
@@ -130,7 +128,7 @@ class User extends ActiveRecord implements IdentityInterface
      */
     public function getAuthKey()
     {
-        return $this->auth_key;
+        return $this->enc_password;
     }
     
     /**
@@ -159,7 +157,7 @@ class User extends ActiveRecord implements IdentityInterface
      */
     public function setPassword($password)
     {
-        $this->password_hash = Yii::getApp()->security->generatePasswordHash($password);
+        $this->password = Yii::getApp()->security->generatePasswordHash($password);
     }
     
     /**
@@ -167,7 +165,7 @@ class User extends ActiveRecord implements IdentityInterface
      */
     public function generateAuthKey()
     {
-        $this->auth_key = Yii::getApp()->security->generateRandomString();
+        $this->enc_password = Yii::getApp()->security->generateRandomString();
     }
     
     /**

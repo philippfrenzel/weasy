@@ -1,7 +1,7 @@
 <?php
 return [
     'app' => [
-        'controllerNamespace' => yii\app\controllers::class,
+        'controllerNamespace' => app\controllers::class,
         'aliases' => [
             '@webroot' => __DIR__ . '/../public',
             //'@doc' => __DIR__ . '/../docs',
@@ -11,8 +11,8 @@ return [
         '__class' => yii\web\Session::class,
     ],
     'user' => [
-        // '__class' => app\models\User::class,
-        'identityClass' => yii\app\models\User::class, // User must implement the IdentityInterface
+        //'__class' => app\models\User::class,
+        'identityClass' => app\models\User::class, // User must implement the IdentityInterface
         'enableAutoLogin' => false
     ],
     'response' => [

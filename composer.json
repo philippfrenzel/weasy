@@ -55,10 +55,10 @@
         }
     },
     "autoload": {
-        "psr-4": {"yii\\app\\": "src"}
+        "psr-4": {"app\\": "src"}
     },
     "autoload-dev": {
-        "psr-4": {"yii\\app\\tests\\": "tests"}
+        "psr-4": {"app\\tests\\": "tests"}
     },
     "scripts": {
         "post-install-cmd": [

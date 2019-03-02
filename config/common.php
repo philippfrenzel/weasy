@@ -39,7 +39,8 @@ return [
         'dsn' => $params['db.dsn'],
         'username' => $params['db.username'],
         'password' => $params['db.password'],
-        'enableSchemaCache' => defined('YII_ENV') && YII_ENV !== 'dev',
+        'enableSchemaCache' => false
+        //'enableSchemaCache' => defined('YII_ENV') && YII_ENV !== 'dev',
     ]),
     'translator' => [
         'translations' => [

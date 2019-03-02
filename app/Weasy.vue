@@ -1,6 +1,8 @@
 <template>
     <div id="weasy">
-        <v-navigation-drawer app></v-navigation-drawer>
+        <v-navigation-drawer app>
+            <header-component />
+        </v-navigation-drawer>
         <v-toolbar app></v-toolbar>
         <v-content>
             <v-container fluid>
@@ -13,7 +15,12 @@
 </template>
 
 <script>
+import HeaderComponent from './components/HeaderComponent'
+
 export default {
-    name: 'Weasy'
+    name: 'Weasy',
+    components: {
+        HeaderComponent
+    }
 }
 </script>

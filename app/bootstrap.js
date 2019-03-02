@@ -1,7 +1,13 @@
 import Vue from 'vue'
+import Vuetify from 'vuetify'
 import VueRouter from 'vue-router'
+import BootstrapVue from 'bootstrap-vue'
 
+Vue.use(BootstrapVue);
+Vue.use(Vuetify);
 Vue.use(VueRouter);
+
+
 
 /**
  * We'll load the axios HTTP library which allows us to easily issue requests

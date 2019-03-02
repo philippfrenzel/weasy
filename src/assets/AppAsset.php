@@ -27,7 +27,7 @@ class AppAsset extends AssetBundle
        'app.js'
     ];
     public $depends = [
-        \yii\jquery\YiiAsset::class,
-        \yii\bootstrap4\BootstrapAsset::class,
+        //\yii\jquery\YiiAsset::class, -- will be managed within the vue app
+        //\yii\bootstrap4\BootstrapAsset::class, -- will be managed within the vue app
     ];
 }

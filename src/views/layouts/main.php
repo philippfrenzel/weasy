@@ -17,6 +17,7 @@ AppAsset::register($this);
 <!DOCTYPE html>
 <html lang="en<?= ""//Yii::$app->language ?>">
 <head>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons' rel="stylesheet">
     <meta charset="UTF-8<?= ""//(Yii::$app->charset ?>">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -27,46 +28,22 @@ AppAsset::register($this);
 <body>
 <?php $this->beginBody() ?>
 
-<div class="wrap" id="app">
-    <div class="container">
-        <nav id="w0" class="navbar navbar-expand-md navbar-dark bg-dark">
-            <div class="container">
-                <div class="navbar-header">
-                    <router-link to="/" class="navbar-brand">BUCHI.COM</router-link>
-                </div>
-
-                <div id="w0-collapse" class="collapse navbar-collapse">
-                    <ul id="w1" class="navbar-nav navbar-right nav">
-                        <li :class="{'active' : isActiveMenu('/')}">
-                            <router-link to="/">Home</router-link>
-                        </li>
-                        <li :class="{'active' : isActiveMenu('/about')}">
-                            <router-link to="/about">About</router-link>
-                        </li>
-                        <li :class="{'active' : isActiveMenu('/login')}">
-                            <router-link to="/login">Login</router-link>
-                        </li>
-                    </ul>
-                </div>
+<v-app id="app">
+    <v-navigation-drawer app></v-navigation-drawer>
+    <v-toolbar app></v-toolbar>
+    <v-content>
+        <v-container fluid>
+        <router-view>
+            <div v-if="this.$route.matched.length == 0">
+                <?= $content ?>
             </div>
-        </nav>
-        <transition>
-            <router-view></router-view>
-        </transition>
-        <div v-if="this.$route.matched.length == 0">
-            <?= $content ?>
-        </div>
-
-    </div>
-</div>
-
-<footer class="footer mt-auto py-3">
-    <div class="container">
-        <p class="pull-left">&copy; BUCHI.COM <?= date('Y') ?></p>
-
-        <p class="pull-right">Powered by <a href="http://www.yiiframework.com/" rel="external">Yii Framework</a></p>
-    </div>
-</footer>
+        </router-view>
+        </v-container>
+    </v-content>
+    <v-footer app>
+    
+    </v-footer>
+</v-app>
 
 <?php $this->endBody() ?>
 </body>

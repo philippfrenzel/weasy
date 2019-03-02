@@ -5,7 +5,7 @@ return [
     
     'adminEmail' => 'admin@frenzel.net',
     
-    'db.dsn'        => "mysql:host=localhost;dbname=weasy;charset=utf8",
+    'db.dsn'        => "mysql:host=192.168.2.125;dbname=weasy", //;charset=utf8
     'db.username'   => 'root',
     'db.password'   => 'secret',
     

@@ -8,24 +8,25 @@
     <br>
 </p>
 
-This is a skeleton [Vue.js](https://vuejs.org/) application integrated with [Yii 2](http://www.yiiframework.com/) as a backend.
+This is a skeleton [Vue.js](https://vuejs.org/) application integrated with [Yii 3](http://www.yiiframework.com/) as a backend.
 
-The template contains examples of using Vue.js and Yii2 including ajax request with enabled CSRF.
+The template contains examples of using Vue.js and Yii3 including ajax request with enabled CSRF.
 
 DIRECTORY STRUCTURE
 -------------------
 
       app/                contains all vue.js templates
-      assets/             contains assets definition
-      commands/           contains console commands (controllers)
       config/             contains application configurations
-      controllers/        contains Web controller classes
-      mail/               contains view files for e-mails
-      models/             contains model classes
+      src/
+        assets/             contains assets definition
+        commands/           contains console commands (controllers)
+        controllers/        contains Web controller classes
+        mail/               contains view files for e-mails
+        models/             contains model classes
+        views/              contains view files for the Web application
       runtime/            contains files generated during runtime
       tests/              contains various tests for the basic application
       vendor/             contains dependent 3rd-party packages
-      views/              contains view files for the Web application
       web/                contains the entry script and Web resources
 
 
@@ -33,7 +34,7 @@ DIRECTORY STRUCTURE
 REQUIREMENTS
 ------------
 
-The minimum requirement by this project template that your Web server supports PHP 5.4.0. and you have node.js and yarn installed
+The minimum requirement by this project template that your Web server supports PHP 7.1.0. and you have node.js and yarn installed
 
 If you do not have **Node.js** installed you can [install it by following instructions](https://nodejs.org/en/download/)
 
@@ -70,7 +71,7 @@ yarn dev
 CONFIGURATION
 -------------
 
-Please, check the [Yii 2 Basic Project Template](https://github.com/yiisoft/yii2-app-basic#configuration) configuration section. 
+Please, check the [Yii Basic Web Project Template](https://github.com/yiisoft/yii2-web-basic#configuration) configuration section. 
 
 CREATE VUE.JS TEMPLATE
 ----------------------

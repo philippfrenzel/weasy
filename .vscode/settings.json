@@ -1,0 +1,27 @@
+{
+    "sqltools.connections": [
+        {
+            "askForPassword": false,
+            "connectionTimeout": 15,
+            "database": "CRM_MSCRM",
+            "dialect": "MSSQL",
+            "domain": null,
+            "name": "CRMPROD",
+            "password": null,
+            "port": 1433,
+            "server": "BLTCHCRMPROD002",
+            "username": "BUCHI01\\frep"
+        },
+        {
+            "askForPassword": false,
+            "connectionTimeout": 15,
+            "database": "yii2basic",
+            "dialect": "MySQL",
+            "name": "yii2basic",
+            "password": "secret",
+            "port": 3306,
+            "server": "127.0.0.1",
+            "username": "root"
+        }
+    ]
+}

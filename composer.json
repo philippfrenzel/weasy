@@ -22,6 +22,7 @@
         "yiisoft/rbac": "dev-master",
         "yiisoft/yii-rest": "^3.0@dev",
         "yiisoft/view": "^3.0@dev",
+        "yiisoft/db":"^3.0@dev",
         "yiisoft/db-mysql":"^3.0@dev",
         "yiisoft/yii-base-web": "^3.0@dev",
         "yiisoft/yii-base-cli": "^3.0@dev",
@@ -48,6 +49,7 @@
                 "*": true
             }
         },
+        "process-timeout": 1800,
         "fxp-asset": {
             "enabled": false
         }

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "44ee783f15f1a52732e54ce6dfdf64d7",
+    "content-hash": "a0f3efba6ba92f0ec38f4f63028375f7",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -373,12 +373,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/commonmark.git",
-                "reference": "d54b2f0af75409b7c7cb919a85e4ef7bc4275f61"
+                "reference": "549834fb4c066055c2d1c57af2e5e49c9cb61109"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/commonmark/zipball/d54b2f0af75409b7c7cb919a85e4ef7bc4275f61",
-                "reference": "d54b2f0af75409b7c7cb919a85e4ef7bc4275f61",
+                "url": "https://api.github.com/repos/thephpleague/commonmark/zipball/549834fb4c066055c2d1c57af2e5e49c9cb61109",
+                "reference": "549834fb4c066055c2d1c57af2e5e49c9cb61109",
                 "shasum": ""
             },
             "require": {
@@ -434,7 +434,7 @@
                 "markdown",
                 "parser"
             ],
-            "time": "2019-01-10T22:00:33+00:00"
+            "time": "2019-02-25T22:05:14+00:00"
         },
         {
             "name": "psr/container",
@@ -636,12 +636,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/swiftmailer/swiftmailer.git",
-                "reference": "c2100aa5bf9acd57e712f208030f1e5e32e420c5"
+                "reference": "a7eb054083599802e9a48acc85b9746c7c650599"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/c2100aa5bf9acd57e712f208030f1e5e32e420c5",
-                "reference": "c2100aa5bf9acd57e712f208030f1e5e32e420c5",
+                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/a7eb054083599802e9a48acc85b9746c7c650599",
+                "reference": "a7eb054083599802e9a48acc85b9746c7c650599",
                 "shasum": ""
             },
             "require": {
@@ -690,7 +690,7 @@
                 "mail",
                 "mailer"
             ],
-            "time": "2019-01-30T06:37:50+00:00"
+            "time": "2019-02-27T08:53:38+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",
@@ -2668,12 +2668,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii-web.git",
-                "reference": "2b3d8e9354febe8e2588d1ea3205dc28666dfd2d"
+                "reference": "559c2558fa8ae99febd59fec98104626696f5511"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii-web/zipball/2b3d8e9354febe8e2588d1ea3205dc28666dfd2d",
-                "reference": "2b3d8e9354febe8e2588d1ea3205dc28666dfd2d",
+                "url": "https://api.github.com/repos/yiisoft/yii-web/zipball/559c2558fa8ae99febd59fec98104626696f5511",
+                "reference": "559c2558fa8ae99febd59fec98104626696f5511",
                 "shasum": ""
             },
             "require": {
@@ -2777,7 +2777,7 @@
                 "framework",
                 "yii"
             ],
-            "time": "2019-02-10T16:46:33+00:00"
+            "time": "2019-02-25T13:29:43+00:00"
         }
     ],
     "packages-dev": [
@@ -2932,27 +2932,27 @@
         },
         {
             "name": "codeception/phpunit-wrapper",
-            "version": "7.6.1",
+            "version": "7.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Codeception/phpunit-wrapper.git",
-                "reference": "ed4b12beb167dc2ecea293b4f6df6c20ce8d280f"
+                "reference": "ab04a956264291505ea84998f43cf91639b4575d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Codeception/phpunit-wrapper/zipball/ed4b12beb167dc2ecea293b4f6df6c20ce8d280f",
-                "reference": "ed4b12beb167dc2ecea293b4f6df6c20ce8d280f",
+                "url": "https://api.github.com/repos/Codeception/phpunit-wrapper/zipball/ab04a956264291505ea84998f43cf91639b4575d",
+                "reference": "ab04a956264291505ea84998f43cf91639b4575d",
                 "shasum": ""
             },
             "require": {
                 "phpunit/php-code-coverage": "^6.0",
-                "phpunit/phpunit": ">=7.1 <7.6",
+                "phpunit/phpunit": "7.5.*",
                 "sebastian/comparator": "^3.0",
                 "sebastian/diff": "^3.0"
             },
             "require-dev": {
                 "codeception/specify": "*",
-                "vlucas/phpdotenv": "^2.4"
+                "vlucas/phpdotenv": "^3.0"
             },
             "type": "library",
             "autoload": {
@@ -2971,7 +2971,7 @@
                 }
             ],
             "description": "PHPUnit classes used by Codeception",
-            "time": "2019-01-13T10:34:39+00:00"
+            "time": "2019-02-26T20:35:32+00:00"
         },
         {
             "name": "codeception/specify",
@@ -3015,20 +3015,20 @@
         },
         {
             "name": "codeception/stub",
-            "version": "2.0.4",
+            "version": "2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Codeception/Stub.git",
-                "reference": "f50bc271f392a2836ff80690ce0c058efe1ae03e"
+                "reference": "853657f988942f7afb69becf3fd0059f192c705a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Codeception/Stub/zipball/f50bc271f392a2836ff80690ce0c058efe1ae03e",
-                "reference": "f50bc271f392a2836ff80690ce0c058efe1ae03e",
+                "url": "https://api.github.com/repos/Codeception/Stub/zipball/853657f988942f7afb69becf3fd0059f192c705a",
+                "reference": "853657f988942f7afb69becf3fd0059f192c705a",
                 "shasum": ""
             },
             "require": {
-                "phpunit/phpunit": ">=4.8 <8.0"
+                "codeception/phpunit-wrapper": ">6.0.15 <6.1.0 | ^6.6.1 | ^7.7.1 | ^8.0.3"
             },
             "type": "library",
             "autoload": {
@@ -3041,7 +3041,7 @@
                 "MIT"
             ],
             "description": "Flexible Stub wrapper for PHPUnit's Mock Builder",
-            "time": "2018-07-26T11:55:37+00:00"
+            "time": "2019-03-02T15:35:10+00:00"
         },
         {
             "name": "codeception/verify",
@@ -5320,6 +5320,7 @@
         "yiisoft/rbac": 20,
         "yiisoft/yii-rest": 20,
         "yiisoft/view": 20,
+        "yiisoft/db": 20,
         "yiisoft/db-mysql": 20,
         "yiisoft/yii-base-web": 20,
         "yiisoft/yii-base-cli": 20,

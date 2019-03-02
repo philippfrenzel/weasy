@@ -17,6 +17,7 @@ use yii\web\AssetBundle;
  */
 class AppAsset extends AssetBundle
 {
+    public $sourcePath = '@yii/app/../public';
     public $basePath = '@webroot';
     public $baseUrl = '@web';
     public $css = [
@@ -26,7 +27,7 @@ class AppAsset extends AssetBundle
        'app.js'
     ];
     public $depends = [
-        //'yii\web\YiiAsset',
-        'yii\bootstrap4\BootstrapAsset'
+        \yii\jquery\YiiAsset::class,
+        \yii\bootstrap4\BootstrapAsset::class,
     ];
 }

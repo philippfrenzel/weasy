@@ -1,0 +1,26 @@
+version: '3'
+
+volumes:
+  node_modules:
+
+services:
+  php:
+    image: yiisoftware/yii-php:7.3-apache
+    working_dir: /app
+    volumes:
+      #- c:/FREP/DOCKER/weasy:/app
+      # TODO: temporary workaround for public web-root
+      #- c:/FREP/DOCKER/weasy/public:/app/web
+      # host-volume for composer cache
+      #- c:/FREP/DOCKER/weasy/~/.composer-docker/cache:/root/.composer/cache:delegated
+      # fix node issue as of https://github.com/sass/node-sass/issues/2520
+      #- node_modules:/app/node_modules
+      - ./:/app
+      # TODO: temporary workaround for public web-root
+      - ./public:/app/web
+      # host-volume for composer cache
+      - ~/.composer-docker/cache:/root/.composer/cache:delegated
+      # fix node issue as of https://github.com/sass/node-sass/issues/2520
+      - node_modules:/app/node_modules
+    ports:
+      - '8010:80'

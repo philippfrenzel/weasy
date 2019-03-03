@@ -1,5 +1,8 @@
 <?php
 return [
+    'bootstrap' => [
+        'gii'
+    ],
     'app' => [
         'controllerNamespace' => app\controllers::class,
         'aliases' => [
@@ -45,6 +48,11 @@ return [
             '<controller:\w+>/<action:(\w|-)+>/<id:\d+>' => '<controller>/<action>',
             '<module:\w+>/<controller:\w+>/<action:(\w|-)+>' => '<module>/<controller>/<action>',
             '<controller:\w+>/<action:(\w|-)+>' => '<controller>/<action>'
+        ],
+    ],
+    'modules' => [
+        'gii' => [
+            '__class' => yii\gii\Module::class,
         ],
     ],
 ];

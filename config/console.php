@@ -2,6 +2,9 @@
 
 return [
     'controllerNamespace' => app\commands::class,
+    'bootstrap' => [
+        'gii'
+    ],
     'aliases' => [
         '@bower' => '@vendor/bower-asset',
         '@npm'   => '@vendor/npm-asset',
@@ -15,6 +18,11 @@ return [
                 //'some\extension\migrations',
             ],
             //'migrationPath' => null, // allows to disable not namespaced migration completely
+        ],
+    ],
+    'modules' => [
+        'gii' => [
+            '__class' => yii\gii\Module::class,
         ],
     ],
 ];

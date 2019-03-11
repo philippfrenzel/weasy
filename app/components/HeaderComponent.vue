@@ -1,15 +1,37 @@
 <template>
     <div id="header-component">
-        <router-link to="/">Home</router-link>
-        <router-link to="/about">About</router-link>
-        <router-link to="/login">Login</router-link>
+        <v-list class="pt-0" dense>
+          <v-divider></v-divider>
+          
+        <v-list-tile
+            v-for="item in items"
+            :key="item.title"
+            @click=""
+        >
+            <v-list-tile-action>
+              <v-icon>{{ item.icon }}</v-icon>
+            </v-list-tile-action>
+
+            <v-list-tile-content>
+              <v-list-tile-title>{{ item.title }}</v-list-tile-title>
+            </v-list-tile-content>
+          </v-list-tile>
+        </v-list>
     </div>
 </template>
 
 <script>
 
 export default {
-    name: 'HeaderComponent'
+    name: 'HeaderComponent',
+    data() {
+        return {
+            items: [
+                { title: 'Foo', icon: ''},
+                { title: 'Bar', icon: '' }
+            ]
+        }
+    }
 }
 
 </script>

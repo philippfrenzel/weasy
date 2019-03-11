@@ -636,12 +636,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/swiftmailer/swiftmailer.git",
-                "reference": "a7eb054083599802e9a48acc85b9746c7c650599"
+                "reference": "aba16d68e2099a01fcb2e1127cbabd258713eb8a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/a7eb054083599802e9a48acc85b9746c7c650599",
-                "reference": "a7eb054083599802e9a48acc85b9746c7c650599",
+                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/aba16d68e2099a01fcb2e1127cbabd258713eb8a",
+                "reference": "aba16d68e2099a01fcb2e1127cbabd258713eb8a",
                 "shasum": ""
             },
             "require": {
@@ -690,7 +690,7 @@
                 "mail",
                 "mailer"
             ],
-            "time": "2019-02-27T08:53:38+00:00"
+            "time": "2019-03-10T07:53:21+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",
@@ -991,12 +991,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/var-dumper.git",
-                "reference": "c7c3aff2c9fcf217f2b02551e63daedbe2f8ba4d"
+                "reference": "b7a0ae82a86e788f7df54843cdc639754722965e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/c7c3aff2c9fcf217f2b02551e63daedbe2f8ba4d",
-                "reference": "c7c3aff2c9fcf217f2b02551e63daedbe2f8ba4d",
+                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/b7a0ae82a86e788f7df54843cdc639754722965e",
+                "reference": "b7a0ae82a86e788f7df54843cdc639754722965e",
                 "shasum": ""
             },
             "require": {
@@ -1059,7 +1059,7 @@
                 "debug",
                 "dump"
             ],
-            "time": "2019-02-23T15:22:31+00:00"
+            "time": "2019-03-07T16:16:39+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -1543,12 +1543,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/di.git",
-                "reference": "fb3de76755f162f6512c2f2eebd106d6ff7432ef"
+                "reference": "c76a364315776b1215d6cfade0560fa0684d1d62"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/di/zipball/fb3de76755f162f6512c2f2eebd106d6ff7432ef",
-                "reference": "fb3de76755f162f6512c2f2eebd106d6ff7432ef",
+                "url": "https://api.github.com/repos/yiisoft/di/zipball/c76a364315776b1215d6cfade0560fa0684d1d62",
+                "reference": "c76a364315776b1215d6cfade0560fa0684d1d62",
                 "shasum": ""
             },
             "require": {
@@ -1596,7 +1596,7 @@
                 "injection",
                 "injector"
             ],
-            "time": "2019-01-18T13:13:18+00:00"
+            "time": "2019-03-04T17:06:22+00:00"
         },
         {
             "name": "yiisoft/log",
@@ -3866,12 +3866,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "96d4ec40751a6c0f5f2ccdb1e1662913065cadac"
+                "reference": "90cff07c1fbadf8ffb404774ad98c845632b443f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/96d4ec40751a6c0f5f2ccdb1e1662913065cadac",
-                "reference": "96d4ec40751a6c0f5f2ccdb1e1662913065cadac",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/90cff07c1fbadf8ffb404774ad98c845632b443f",
+                "reference": "90cff07c1fbadf8ffb404774ad98c845632b443f",
                 "shasum": ""
             },
             "require": {
@@ -3942,28 +3942,28 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2019-02-20T10:29:15+00:00"
+            "time": "2019-03-06T05:40:19+00:00"
         },
         {
             "name": "ralouphie/getallheaders",
-            "version": "3.0.2",
+            "version": "3.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ralouphie/getallheaders.git",
-                "reference": "beb49b96960f0cbf17e7fbcaaddc8eb434e126eb"
+                "reference": "120b605dfeb996808c31b6477290a714d356e822"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ralouphie/getallheaders/zipball/beb49b96960f0cbf17e7fbcaaddc8eb434e126eb",
-                "reference": "beb49b96960f0cbf17e7fbcaaddc8eb434e126eb",
+                "url": "https://api.github.com/repos/ralouphie/getallheaders/zipball/120b605dfeb996808c31b6477290a714d356e822",
+                "reference": "120b605dfeb996808c31b6477290a714d356e822",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.6"
             },
             "require-dev": {
-                "phpunit/phpunit": "^5",
-                "satooshi/php-coveralls": ">=1.0"
+                "php-coveralls/php-coveralls": "^2.1",
+                "phpunit/phpunit": "^5 || ^6.5"
             },
             "type": "library",
             "autoload": {
@@ -3982,7 +3982,7 @@
                 }
             ],
             "description": "A polyfill for getallheaders.",
-            "time": "2018-12-11T21:53:24+00:00"
+            "time": "2019-03-08T08:55:37+00:00"
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",
@@ -4686,12 +4686,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/contracts.git",
-                "reference": "1aa7ab2429c3d594dd70689604b5cf7421254cdf"
+                "reference": "c0827ad2f3e7e4c8d7d40eba9fcc9c79a13fb759"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/contracts/zipball/1aa7ab2429c3d594dd70689604b5cf7421254cdf",
-                "reference": "1aa7ab2429c3d594dd70689604b5cf7421254cdf",
+                "url": "https://api.github.com/repos/symfony/contracts/zipball/c0827ad2f3e7e4c8d7d40eba9fcc9c79a13fb759",
+                "reference": "c0827ad2f3e7e4c8d7d40eba9fcc9c79a13fb759",
                 "shasum": ""
             },
             "require": {
@@ -4699,19 +4699,21 @@
             },
             "require-dev": {
                 "psr/cache": "^1.0",
-                "psr/container": "^1.0"
+                "psr/container": "^1.0",
+                "symfony/polyfill-intl-idn": "^1.10"
             },
             "suggest": {
                 "psr/cache": "When using the Cache contracts",
                 "psr/container": "When using the Service contracts",
                 "symfony/cache-contracts-implementation": "",
+                "symfony/http-client-contracts-implementation": "",
                 "symfony/service-contracts-implementation": "",
                 "symfony/translation-contracts-implementation": ""
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.0-dev"
+                    "dev-master": "1.1-dev"
                 }
             },
             "autoload": {
@@ -4746,7 +4748,7 @@
                 "interoperability",
                 "standards"
             ],
-            "time": "2018-12-05T08:06:11+00:00"
+            "time": "2019-03-07T16:16:38+00:00"
         },
         {
             "name": "symfony/css-selector",

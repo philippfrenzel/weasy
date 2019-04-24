@@ -6,20 +6,13 @@ return [
             '@app' => dirname(__DIR__),
             '@vendor' => dirname(__DIR__) . '/vendor',
         ]
-        /*
-        'controllerMap' => [
-            'fixture' => [ // Fixture generation command line.
-                '__class' => 'yii\faker\FixtureController',
-            ],
-        ],
-        */
     ],
     'logger' => [
         '__construct()' => [
             'targets' => [
                 [
-                    '__class' => yii\log\FileTarget::class,
-                    'levels' => ['error', 'warning'],
+                    '__class' => Yii\Log\FileTarget::class,
+                    'levels'  => ['error', 'warning'],
                 ],
             ],
         ],

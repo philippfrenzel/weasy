@@ -9,10 +9,13 @@
         "source": "https://github.com/philippfrenzel/weasy"
     },
     "minimum-stability": "dev",
+    "prefer-stable": true,
     "require": {
         "ezyang/htmlpurifier": "~4.6",
+        "foxy/foxy": "^1.0",
         "hiqdev/composer-config-plugin": "^1.0@dev",
         "league/commonmark": "^0.19.0@dev",
+        "php": ">=7.1.0",
         "symfony/var-dumper": "^4.3@dev",
         "vlucas/phpdotenv": "^2.5@dev",
         "yiisoft/active-record": "^3.0@dev",
@@ -31,8 +34,7 @@
         "yiisoft/yii-console": "^3.0@dev",
         "yiisoft/yii-web": "^3.0@dev",
         "yiisoft/yii-dataview": "^3.0@dev",
-        "yiisoft/yii-swiftmailer": "dev-master",
-        "foxy/foxy": "^1.0"
+        "yiisoft/yii-swiftmailer": "dev-master"
     },
     "require-dev": {
         "hiqdev/composer-config-plugin": "^1.0@dev",

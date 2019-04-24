@@ -1,12 +1,12 @@
 <template>
     <div id="header-component">
         <v-list class="pt-0" dense>
-          <v-divider></v-divider>
           
-        <v-list-tile
-            v-for="item in items"
-            :key="item.title"
-        >
+          <v-list-tile
+              v-for="item in items"
+              :key="item.title"
+              @click="item.action"
+          >
             <v-list-tile-action>
               <v-icon>{{ item.icon }}</v-icon>
             </v-list-tile-action>
@@ -26,8 +26,8 @@ export default {
     data() {
         return {
             items: [
-                { title: 'Foo', icon: ''},
-                { title: 'Bar', icon: '' }
+                { title: 'About', icon: '', action: '/about'},
+                { title: 'Login', icon: '', action: '/login'}
             ]
         }
     }

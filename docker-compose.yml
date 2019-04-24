@@ -17,10 +17,6 @@ services:
       - c:/FREP/DOCKER/weasy/~/.composer-docker/cache:/root/.composer/cache:delegated
       # fix node issue as of https://github.com/sass/node-sass/issues/2520
       - node_modules:/app/node_modules
-      - type: bind
-        source: ./_host-volumes/runtime/mysql
-        target: /app/runtime/mysql
-        consistency: delegated
     ports:
       - '8010:80'
   db:
@@ -30,3 +26,8 @@ services:
       - MYSQL_ROOT_PASSWORD=secret
     ports:
       - '3306:3306'
+    volumes:
+      - type: bind
+        source: ./_host-volumes/runtime/mysql
+        target: /app/runtime/mysql
+        consistency: delegated

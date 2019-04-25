@@ -7,6 +7,7 @@ return [
         'controllerNamespace' => app\controllers::class,
         'aliases' => [
             '@webroot' => __DIR__ . '/../public',
+            '@npm' => __DIR__ . '/../node_modules',
             //'@doc' => __DIR__ . '/../docs',
         ],
     ],
@@ -38,6 +39,12 @@ return [
     ],
     'assetManager' => [
         'appendTimestamp' => true,
+        'linkAssets' => true,
+        'bundles' => [
+        \Yiisoft\Yii\Bootstrap4\BootstrapAsset::class => [
+                'css' => [],
+            ]
+        ]
     ],
     'urlManager' => [
         'enablePrettyUrl' => true,
@@ -47,7 +54,8 @@ return [
             '<controller:(\w|-)+>/' => '<controller>/index',
             '<controller:\w+>/<action:(\w|-)+>/<id:\d+>' => '<controller>/<action>',
             '<module:\w+>/<controller:\w+>/<action:(\w|-)+>' => '<module>/<controller>/<action>',
-            '<controller:\w+>/<action:(\w|-)+>' => '<controller>/<action>'
+            '<controller:\w+>/<action:(\w|-)+>' => '<controller>/<action>',
+            'site/packages/<package:[-\w]+>' => 'site/package'
         ],
     ],
     'modules' => [

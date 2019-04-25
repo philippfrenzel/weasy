@@ -3,17 +3,15 @@
 /* @var $this \yii\web\View */
 /* @var $content string */
 
-use yii\helpers\Yii;
-use app\widgets\Alert;
 use yii\helpers\Html;
-use yii\bootstrap4\Nav;
-use yii\bootstrap4\NavBar;
-use yii\widgets\Breadcrumbs;
 use app\assets\AppAsset;
+use yii\web\View;
 
 AppAsset::register($this);
+
+$this->beginPage() 
+
 ?>
-<?php $this->beginPage() ?>
 <!DOCTYPE html>
 <html lang="en<?= ""//Yii::$app->language ?>">
 <head>

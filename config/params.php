@@ -5,7 +5,11 @@ return [
     
     'adminEmail' => 'admin@frenzel.net',
     
-    'db.dsn'        => "mysql:host=10.93.152.212;dbname=weasy", //192.168.2.125;charset=utf8
+    'debug.allowedIPs' => ['*'],
+
+    'db.name'       => 'weasy',
+    'db.host'       => '127.0.0.1',
+    'db.port'       => 3306,
     'db.username'   => 'root',
     'db.password'   => 'secret',
     
@@ -13,5 +17,7 @@ return [
     
     'i18n.locale' => 'en-US',
     
-    'debug.allowedIPs' => ['127.0.0.1']
+    'packages' => require 'packages.php',
+
+    'request.cookieValidationKey' => 'kZcZPIa22dtb5k00JfBhtOm9svGfihig'
 ];

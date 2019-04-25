@@ -18,11 +18,13 @@ use yii\web\AssetBundle;
 class AppAsset extends AssetBundle
 {
     public $sourcePath = '@yii/app/../public';
-    public $basePath = '@webroot';
+    //public $basePath = '@webroot';
     public $baseUrl = '@web';
+    
     public $css = [
         'css/site.css',
     ];
+    
     public $js = [
        'app.js'
     ];
